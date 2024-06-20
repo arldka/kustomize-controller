@@ -13,6 +13,7 @@ require (
 	github.com/AdaLogics/go-fuzz-headers v0.0.0-20230811130428-ced1acdcaa24
 	github.com/Azure/azure-sdk-for-go/sdk/azcore v1.11.1
 	github.com/Azure/azure-sdk-for-go/sdk/azidentity v1.5.2
+	github.com/arldka/pkg/kustomize v1.11.1
 	github.com/aws/aws-sdk-go-v2/credentials v1.17.11
 	github.com/cyphar/filepath-securejoin v0.2.5
 	github.com/dimchansky/utfbom v1.1.1
@@ -23,7 +24,6 @@ require (
 	github.com/fluxcd/pkg/apis/kustomize v1.5.0
 	github.com/fluxcd/pkg/apis/meta v1.5.0
 	github.com/fluxcd/pkg/http/fetch v0.11.0
-	github.com/fluxcd/pkg/kustomize v1.11.0
 	github.com/fluxcd/pkg/runtime v0.47.1
 	github.com/fluxcd/pkg/ssa v0.39.1
 	github.com/fluxcd/pkg/tar v0.7.0
@@ -102,6 +102,7 @@ require (
 	github.com/exponent-io/jsonpath v0.0.0-20210407135951-1de76d718b3f // indirect
 	github.com/fatih/color v1.16.0 // indirect
 	github.com/fluxcd/pkg/envsubst v1.1.0 // indirect
+	github.com/fluxcd/pkg/kustomize v1.11.0 // indirect
 	github.com/fluxcd/pkg/sourceignore v0.7.0 // indirect
 	github.com/fsnotify/fsnotify v1.7.0 // indirect
 	github.com/getsops/gopgagent v0.0.0-20170926210634-4d7ea76ff71a // indirect

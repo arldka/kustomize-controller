@@ -30,6 +30,8 @@ COPY internal/ internal/
 ENV CGO_ENABLED=0
 RUN xx-go build -trimpath -a -o kustomize-controller main.go
 
+FROM alpine/helm:3.15.2 as helm
+
 FROM alpine:3.19
 
 ARG TARGETPLATFORM
@@ -38,6 +40,8 @@ RUN apk --no-cache add ca-certificates tini git openssh-client gnupg \
   && update-ca-certificates
 
 COPY --from=builder /workspace/kustomize-controller /usr/local/bin/
+COPY --from=helm /usr/bin/helm /usr/local/bin/helmV3
+COPY --from=helm /usr/bin/helm /usr/bin/helm
 
 USER 65534:65534
 
